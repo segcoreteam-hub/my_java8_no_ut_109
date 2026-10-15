@@ -20,6 +20,8 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <!-- 3.11.0: host Maven is 3.8.4 (>=3.6.0, <3.9.0), so 3.13.0+ (requires Maven 3.9.0+)
+                     cannot be used and 3.0.5 is too old to honor <release>21</release>. -->
                 <version>3.11.0</version>
                 <configuration>
                     <release>21</release>
